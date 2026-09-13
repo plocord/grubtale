@@ -1,35 +1,24 @@
 # Undertale GRUB Theme
-insmod all_video
-insmod gfxterm
 
-# Background canvas
 desktop-image: "background.jpg"
 desktop-color: "#000000"
 
-# Boot Menu positioning (Bottom Half)
 + boot_menu {
     left = 20%
-    top = 55%          # Placed in the bottom half of the screen
+    top = 55%
     width = 60%
     height = 40%
-    
-    # Font Settings (Use the exact font name registered inside your converted .pf2)
+
     item_font = "8bitoperator JVE Mono Regular 24"
-    
-    # Colors
-    item_color = "#ffffff"          # Inactive text is White
-    selected_item_color = "#ffff00" # Active text is Undertale Yellow
-    
-    # Spacing
+    item_color = "#ffffff"
+    selected_item_color = "#ffff00"
+
     item_height = 40
     item_padding = 0
     item_spacing = 16
-    
-    # Selection Indicator (Red Soul Heart)
-    # GRUB uses sliced/pixmap styles for selection markers
+
     selected_item_pixmap_style = "select_*.png"
-    
-    # Alignment & Icon Spacing
+
     icon_width = 24
     icon_height = 24
     item_icon_space = 12
