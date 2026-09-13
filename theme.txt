@@ -1,4 +1,6 @@
 # Undertale GRUB Theme
+insmod all_video
+insmod gfxterm
 
 # Background canvas
 desktop-image: "background.jpg"
