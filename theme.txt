@@ -1,7 +1,7 @@
 # Undertale GRUB Theme
 
 # Background canvas
-desktop-image: "background.png"
+desktop-image: "background.jpg"
 desktop-color: "#000000"
 
 # Boot Menu positioning (Bottom Half)
