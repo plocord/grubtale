@@ -17,8 +17,7 @@ desktop-color: "#000000"
     item_padding = 0
     item_spacing = 16
 
-    selected_item_pixmap_style = "select_*.png"
-
+    selected_item_pixmap = "select_c.png"
     icon_width = 24
     icon_height = 24
     item_icon_space = 12
