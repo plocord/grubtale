@@ -9,7 +9,6 @@ An Undertale-inspired GRUB2 boot theme — pixel-art castle background, retro bi
 - GRUB2 (tested on Fedora 44, `grub2-mkconfig`-based systems)
 - A display/GRUB graphics mode of **1024x768**
 
-This theme is built and tested for **1024x768 only**. GRUB stretches background and pixmap assets to fill whatever resolution it renders at, with no aspect-ratio-preserving scaling — so using it at a different resolution may distort the artwork. If you want to adapt it for another resolution, you'll need to re-export `background.png` at that resolution and re-test.
 
 ## Files
 
@@ -37,7 +36,7 @@ grubtale/
    GRUB_THEME="/boot/grub2/themes/grubtale/theme.txt"
    GRUB_PRELOAD_MODULES="all_video gfxterm font png jpeg"
    ```
-   Do **not** append `,auto` to `GRUB_GFXMODE` — this theme is not resolution-independent, and falling back to an untested resolution may look broken.
+   This theme is built and tested for **1024x768 only**. Therefore in this repository it is stated that GRUB_GFXMODE="1024x768". ** For better experience, it is recommended to alter the file and put your desired resolution (For example: GRUB_GFXMODE="1920x1080"). Do **not** append `,auto` to `GRUB_GFXMODE` — this theme is not resolution-independent, and falling back to an untested resolution may look broken. 
 
 3. **Regenerate your GRUB config:**
    ```bash
